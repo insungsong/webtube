@@ -25,7 +25,7 @@ _passport.default.use(_User.default.createStrategy()); // User(passport-local-mo
 _passport.default.use(new _passportGithub.default({
   clientID: process.env.GH_ID,
   clientSecret: process.env.GH_SECRET,
-  callbackURL: process.env.NODE_ENV ? `https://fathomless-bastion-84075.herokuapp.com${_routes.default.githubCallback}` : `http://localhost:4000${_routes.default.githubCallback}`
+  callbackURL: process.env.NODE_ENV ? `https://secure-mesa-17756.herokuapp.com${_routes.default.githubCallback}` : `http://localhost:4000${_routes.default.githubCallback}`
 }, _userController.githubLoginCallback));
 
 _passport.default.use(new _passportFacebook.default({

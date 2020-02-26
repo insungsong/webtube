@@ -21,7 +21,7 @@ passport.use(
       clientID: process.env.GH_ID,
       clientSecret: process.env.GH_SECRET,
       callbackURL: process.env.NODE_ENV
-        ? `https://fathomless-bastion-84075.herokuapp.com${routes.githubCallback}`
+        ? `https://secure-mesa-17756.herokuapp.com${routes.githubCallback}`
         : `http://localhost:4000${routes.githubCallback}`
     },
     githubLoginCallback
