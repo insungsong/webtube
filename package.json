@@ -59,7 +59,7 @@
     "build": "npm run build:server && npm run build:assets && npm run copyAll",
     "tunnel": "ngrok http 4000",
     "start": "node build/init.js",
-    "start_window": "set NODE_ENV=production && node build/init.js"
+    "start_window": "set NODE_ENV=production&&node build/init.js"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.8.3",
